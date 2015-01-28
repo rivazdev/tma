@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="edit"
+        android:src="@drawable/ic_action_edit_holo_light" />
+
+    <TextView
+        android:id="@+id/mytext1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/stopbutton"
+        android:layout_toRightOf="@id/icon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mytext2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mytext1"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stopbutton"
+        android:layout_toRightOf="@id/icon"
+        android:textSize="14sp"
+         />
+
+    <ImageView
+        android:id="@+id/stopbutton"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+         android:layout_alignParentRight="true"
+        android:src="@drawable/stop_task_btn" />
+
+</RelativeLayout> 

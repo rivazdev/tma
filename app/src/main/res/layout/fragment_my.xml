@@ -1,0 +1,130 @@
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+   <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+           >
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_alignParentTop="true"
+           android:weightSum="1">
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceLarge"
+                   android:text="Task Name:  "
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginRight="8dp"
+                   android:id="@+id/textView" />
+
+               <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:id="@+id/spinner2"
+
+
+            />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:text="Description:"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="8dp"
+               android:id="@+id/textView2" />
+
+           <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/note_edit_text"
+         android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+
+        />
+
+
+
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+         android:layout_marginLeft="16dp"
+      />
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker"
+             android:layout_marginLeft="16dp"
+             />
+
+               <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="32dp"
+                   android:layout_gravity="center"
+                   >
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Billable"
+                       android:checked="true"
+                       android:id="@+id/bill_radio" />
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Non-Billable"
+                       android:id="@+id/non_bill_radio" />
+               </RadioGroup>
+
+           </LinearLayout>
+
+
+           <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Start"
+        android:id="@+id/start_task"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/start_task_btn"
+
+
+
+        ></Button>
+     </LinearLayout>
+
+   </ScrollView>
+
+
+
+    </LinearLayout>
